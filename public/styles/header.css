@@ -1,10 +1,10 @@
-header {
+.profile-header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   height: 400px;
-  width: 100%;
+  width: 100vw;
   background-color: #cc8100;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }

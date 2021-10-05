@@ -33,3 +33,7 @@ form label {
   font-family: 'Bungee', cursive;
   font-weight: 400;
 }
+
+.over {
+  color: red;
+}
