@@ -10,6 +10,10 @@
   box-shadow: 6px 6px 5px rgb(64 86 161 / 0.7);
 }
 
+.article-class {
+  width: 100%;
+}
+
 article header {
   display: flex;
   justify-content: space-between;
@@ -29,8 +33,6 @@ article header {
 
 .avatar-pic {
   display: flex;
-  /* align-self: flex-start; */
-  /* padding: 2%; */
 }
 
 .name {
