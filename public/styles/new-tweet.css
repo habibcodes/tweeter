@@ -1,0 +1,36 @@
+button {
+  border: none;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  height: 30px;
+}
+
+form label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 5;
+}
+
+#tweet-text {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  background-color: #f4f1ec;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  resize: none;
+  width: 90vw;
+  height: 35px;
+}
+
+
+.tweet-description {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  font-weight: 400;
+}

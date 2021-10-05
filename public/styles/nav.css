@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  height: 100px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.nav-logo {
+  display: flex;
+  font-family: 'Bungee', cursive;
+  font-weight: 400;
+  padding: 1.5em;
+}
+
+.tweet-text {
+  display: flex;
+  font-weight: 300;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.tweet-text i {
+  display: flex;
+  justify-content: center;
+  color: red;
+
+}
