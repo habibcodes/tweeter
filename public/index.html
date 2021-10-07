@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -31,6 +32,8 @@
 
     <link rel="stylesheet" href="/styles/display-tweets.css" type="text/css">
 
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css">
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -48,6 +51,7 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
+
     <nav>
       <div class="nav-logo">
         <span >tweeter</span>
@@ -58,18 +62,28 @@
       </div>
     </nav>
 
-    <header class="profile-header">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Amy Mansell</h2>
-      </div>
-    </header>
+    <div class="wrapper">
+      <header class="profile-header">
+        <div>
+            <img id="header-img"src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2>Amy Mansell</h2>
+        </div>
+      </header>
+ 
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
+      <!-- display/hide err msg -->
+      <section class="error-section">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p id="error-message">
+        </p>
+        <i class="fas fa-exclamation-triangle"></i>
+      </section class="error-section">
 
       <!-- tweet input and post -->
       <section class="new-tweet">
@@ -83,21 +97,13 @@
           </div>
         </form>
       </section>
-      <!-- display/hide err msg -->
-      <section class="error-section">
-        <p id="error-message">
-          <i class="fas fa-exclamation-triangle"></i>
-
-          <i class="fas fa-exclamation-triangle"></i>
-
-        </p>
-      </section class="error-section">
+      
 
       <!-- new tweet display -->
       <section id="tweet-container"> 
       </section>
-
-
     </main>
+    </div>
+
   </body>
 </html>

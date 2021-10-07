@@ -85,8 +85,11 @@ article footer {
   display:none;
 }
 
-#specific-message {
+#error-message {
   display:inline;
   color:red;
+}
 
+.fa-exclamation-triangle {
+  color: red;
 }

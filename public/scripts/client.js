@@ -124,21 +124,25 @@ $(() => {
     event.preventDefault();
 
     const text = $('#tweet-text').val();
-
+    
     // form validation
     if (!text) {
       $('.error-section').slideDown('slow');
       $('#error-message').text('Please enter text');
+      return;
     }
     if (text.length > 140) {
-      $('error-section').slideDown('slow');
-      $('error-message').text('Max characters exceeded');
-      // return alert('You entered too many characters!');
+      $('.error-section').slideDown('slow');
+      $('#error-message').text('Max characters exceeded');
+      return;
     }
     
     const serializedData = $(this).serialize();
-
+    
     $.post('/tweets/', serializedData, (response) => {
+      $('.error-section').slideUp('slow');
+      $('#tweet-text').val('');
+      $('.counter').val('140');
       console.log(response);
       loadTweets();
     });
