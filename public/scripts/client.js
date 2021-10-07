@@ -83,7 +83,7 @@ $(() => {
         </header>
 
         <div class="posted-tweet">
-          <p>${userObj.content.text}</p>
+          <p>${(escape(userObj.content.text)).replace(/%20/g, " ").replace("%3F", "?").replace("%21", "!").replace(/%2C/g,",")}</p>
           <hr>
         </div>
     
@@ -127,10 +127,13 @@ $(() => {
 
     // form validation
     if (!text) {
-      return alert('Please enter text');
+      $('.error-section').slideDown('slow');
+      $('#error-message').text('Please enter text');
     }
     if (text.length > 140) {
-      return alert('You entered too many characters!');
+      $('error-section').slideDown('slow');
+      $('error-message').text('Max characters exceeded');
+      // return alert('You entered too many characters!');
     }
     
     const serializedData = $(this).serialize();

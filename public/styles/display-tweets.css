@@ -79,4 +79,14 @@ article footer {
 .flag-retweet-like .icon:hover {
   color: #c2983b;
 }
-/* sd */
+
+.error-section{
+  margin-top: 1em;
+  display:none;
+}
+
+#specific-message {
+  display:inline;
+  color:red;
+
+}
