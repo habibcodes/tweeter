@@ -15,7 +15,11 @@ The app communicates over AJAX with the server to dynamically updated and render
 
 ## Final Product
 
-!["screenshot of login page"](https://github.com/habibcodes/tinyapp/blob/main/docs/login-page.png?raw=true)
+!["screenshot of desktop view"](https://github.com/habibcodes/tweeter/blob/master/docs/desktop%20view.png)
+!["screenshot of mobile view"](https://github.com/habibcodes/tweeter/blob/master/docs/mobile%20view.png)
+!["screenshot of tweet highlight"](https://github.com/habibcodes/tweeter/blob/master/docs/tweet%20highlight.png)
+!["screenshot of dynamic tweet character counter"](https://github.com/habibcodes/tweeter/blob/master/docs/dynamic%20tweet%20counter.png)
+!["screenshot of error message"](https://github.com/habibcodes/tweeter/blob/master/docs/error%20message.png)
 
 ## Dependencies
 
