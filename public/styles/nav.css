@@ -1,14 +1,14 @@
 nav {
   display: flex;
-  height: 120px;
+  height: 100px;
   width: 100vw;
-  /* background-color: #4056A1; */
+  background-color: #4056A1;
   color: #FFFFFF;
   justify-content: space-between;
   /* psition: -webkit-sticky;
   position: sticky; */
   position: fixed;
-  /* top: 0; */
+  top: 0;
   z-index: 2;
 }
 
