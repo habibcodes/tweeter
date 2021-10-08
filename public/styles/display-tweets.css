@@ -1,7 +1,3 @@
-/* #tweet-container {
-  margin-top: 500px;
-} */
-
 .tweet-container {
   display: flex;
   flex-direction: row;
@@ -18,6 +14,8 @@
   width: 100%;
 }
 
+/* this section styles tweet sections and child 
+components of each displayed tweet */
 article header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +30,6 @@ article header {
 .avatar-pic p {
   font-size: .75em;
   padding-left: .5em;
-  
 }
 
 .avatar-pic {
@@ -53,12 +50,15 @@ article header {
   padding: 0em 0.5em;
   font-size: 0.95em;
 }
+
 .posted-tweet hr {
   border-bottom: solid 3px #545149;
   width: 100%;
   margin: 0em;
 }
 
+/* this section styles dynamically created 
+tweets and child elements */
 article footer {
   display: flex;
   justify-content: space-between;
@@ -84,6 +84,7 @@ article footer {
   color: #c2983b;
 }
 
+/* adds toggle styling to err messages and */
 .error-section{
   margin-top: 1em;
   display:none;

@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1024px) {
-
+/* styling here overrides existing styling for breakpoint */
   /* nav element section */
   nav {
     position: static;
@@ -25,7 +25,6 @@
     height: 250px;
     width: 25%;
     position: static;
-    /* padding: 115px; */
   }
 
   .profile-name {
@@ -38,22 +37,11 @@
   }
 
   #header-img {
-    /* padding-top: 5rem; */
     margin-top: 2rem;
     height: 7rem;
     width: 7rem;
   }
 
-
- /*  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-    background-color: #f4f1ec;
-    margin: 0 5%;
-  } */
   /* everything inside the main container */
   .container {
     order: 1;
@@ -61,7 +49,6 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-
   }
 
   #tweet-container {
@@ -82,15 +69,5 @@
   /* new tweet form section */
   .new-tweet {
     width: 85%;
-  }
- 
-
-  /* #new-tweet-form {
-    max-width: 700px;
-  } */
-
-  
-
-
-  
+  }  
 } 

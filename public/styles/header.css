@@ -8,14 +8,5 @@
   width: 100vw;
   background-color: #cc8100;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  /* margin-top: 100px; */
   z-index: -1;
-  /* position: fixed; */
 }
-
-/* 
-.avatar {
-  display: flex;
-  justify-content: center;
-  alignlf: center;
-} */
