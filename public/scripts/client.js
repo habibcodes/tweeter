@@ -127,12 +127,12 @@ $(() => {
     
     // form validation
     if (!text) {
-      $('.error-section').slideDown('slow');
+      $('.error-section').slideDown('fast');
       $('#error-message').text('Please enter text');
       return;
     }
     if (text.length > 140) {
-      $('.error-section').slideDown('slow');
+      $('.error-section').slideDown('fast');
       $('#error-message').text('Max characters exceeded');
       return;
     }
@@ -140,7 +140,7 @@ $(() => {
     const serializedData = $(this).serialize();
     
     $.post('/tweets/', serializedData, (response) => {
-      $('.error-section').slideUp('slow');
+      $('.error-section').slideUp('fast');
       $('#tweet-text').val('');
       $('.counter').val('140');
       console.log(response);
